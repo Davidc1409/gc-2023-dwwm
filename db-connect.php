@@ -1,7 +1,7 @@
 <?php
     $host="localhost";
     $username="root";
-    $password="toto";
+    $password="";
     $dbname="gc-project";
     try{
         $db =new PDO("mysql:host=$host;dbname=$dbname",$username,$password);
