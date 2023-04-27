@@ -48,23 +48,6 @@ switch ($method["choice"]){
         $list_str_column=[];
         $list_str_placeholder=[];
 
-             
-        // if(isset($method["articles_name"]) && !empty(trim($method["articles_name"]))){
-        //     $list_str_column["articles_name"]="articles_name";
-        //     $list_str_placeholder["articles_name"]=":articles_name";
-        // }
-
-        // if(isset($method["text_content"]) && !empty(trim($method["text_content"]))){
-        //     $list_str_column["text_content"]="text_content";
-        //     $list_str_placeholder["text_content"]=":text_content";
-        // }
-
-        // if(isset($method["media_content"]) && !empty(trim($method["media_content"]))){
-        //     $list_str_column["media_content"]="media_content";
-        //     $list_str_placeholder["media_content"]=":media_content";
-
-        // }
-
         foreach($method as $key => $val){
             if(isset($val) && !empty(trim($val)) && $key!="choice"){
                 $list_str_column[$key]=$key;
