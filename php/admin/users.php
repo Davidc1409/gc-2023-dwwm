@@ -58,26 +58,7 @@ switch ($method["choice"]){
         if (isset($_FILES["avatar"]["name"])){
             $upload_img = ", avatar= :avatar";
         } 
-
-        // if(isset($method["firstname"]) && !empty(trim($method["firstname"]))){
-        //     $list_update["firstname"]="firstname=:firstname";
-        // }
-
-        // if(isset($method["lastname"]) && !empty(trim($method["lastname"]))){
-        //     $list_update["lastname"]="lastname=:lastname";
-        // }
-
-        // if(isset($method["username"]) && !empty(trim($method["username"]))){
-        //     $list_update["username"]="username=:username";
-        // }
-
-        // if(isset($method["email"])&& !empty(trim($method["email"]))){
-        //     $list_update["email"]="email=:email";
-        // }
-        // if(isset($method["pwd"]) && !empty(trim($method["pwd"]))){
-        //     $hash=password_hash($method["pwd"],PASSWORD_DEFAULT);
-        //     $list_update["pwd"]="pwd=:pwd";
-        // }
+        
         if(count($list_update)>1){
             $list_concat=implode(",",$list_update);
         }
@@ -98,21 +79,6 @@ switch ($method["choice"]){
         }
         if (isset($_FILES["avatar"]["name"])) $img_bind = upload_avatar($_FILES);
         if ($img_bind) $query->bindValue(":avatar", "../ressources/images/" . $img_bind);
-        // if(isset($list_update["firstname"])){
-        //     $query->bindValue(":firstname",$method["firstname"]);
-        // }
-        // if(isset($list_update["lastname"])){
-        //     $query->bindValue(":lastname",$method["lastname"]);
-        // }
-        // if(isset($list_update["username"])){
-        //     $query->bindValue(":username",$method["username"]);
-        // }
-        // if(isset($list_update["email"])){
-        //     $query->bindValue(":email",$method["email"]);
-        // }
-        // if(isset($list_update["pwd"])){
-        //     $query->bindValue(":pwd",$hash);
-        // }
         $query->execute();
         echo json_encode(["success"=>true]);
         break;
