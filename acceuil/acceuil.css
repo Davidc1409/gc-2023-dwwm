@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+font-family: "valorant";
+src: url(../ressources/Valorant\ Font.ttf);
+}
+@font-face {
+    font-family: "poppins-reg";
+    src: url(../ressources/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppins-extrabold";
+    src: url(../ressources/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "poppins-bold";
+    src: url(../ressources/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "pixelart";
+    src: url(../ressources/pixelart.ttf);
+}
+
+.valorant-font{
+font-family: "valorant";
+font-size: 1.25em;
+}
+
+.poppins-reg{
+    font-family: "poppins-reg";
+}
+
+.poppins-extrabold{
+    font-family: "poppins-extrabold";
+}
+
+.color-violet{
+    background-color: #968ADF;
+}
+
+.color-blue{
+    background-color: #5FA0FE;
+}
+
+p {
+    font-family: "poppins-reg";
+    text-align: justify;
+}
+
+h2 {
+    font-family: "poppins-extrabold";
+}
+
+h5{
+    font-family: "poppins-bold";
+}
+
+@media screen and (min-width: 992px) {
+    #blue-box {
+        background-color: #5FA0FE;
+    }
+  }
+
+#container-intro{
+min-height: 27.125em;
+background-color: #968ADF;
+
+}
+
+#blue-box{
+    min-height: 200px;
+}
+
+#white-box{
+    min-height: 320px;
+}
+
+#text{
+    background-color: #968ADF;
+}
+
+#btn-connect{
+    background-color: #968ADF;
+}
+
+/* #image-intro img{
+width: 100%;
+height: 100%;
+object-fit:cover;
+}
+
+#img-blue-box{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+} */
