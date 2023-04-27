@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>GameConnect</title>
+</head>
+<body class="login-bg-image">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white sticky-top " id="navigator" >
+            <div class="container-fluid p-0 px-4">
+                <a href="#" class="navbar-brand valorant-font">GameConnect</a>
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="navbar-collapse collapse" id="navmenu">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                        <a href="../acceuil/acceuil.html" class="nav-link poppins-reg">Découvrir</a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="../chat/chat.html" class="nav-link poppins-reg">Discuter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../articles/articles.html" class="nav-link poppins-reg">Blog</a>
+                            </li>
+                        <li class="nav-item">
+                        <a href="#" class="nav-link poppins-reg">Contact</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link d-lg-none d-sm-block poppins-reg">Connexion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-lg-flex d-none justify-content-end pe-3">
+                <button id="btn-connect" class="btn color-violet btn-md ms-auto" ><a class="text-decoration-none text-white poppins-reg" href="../articles/articles.html">Connexion</a></button>
+            </div>
+        </nav>   
+    </header>
+    <main>
+        <div class="container-fluid p-0 background-size d-flex justify-content-center align-items-center">
+            <div class="row form-size d-flex flex-column align-items-center m-0">
+                <div class="col-12 col-lg-6 p-0">
+                    <img class="img-fluid  rounded-top-3" src="../ressources/images/login-pic.jpg" alt="">
+                </div>
+                <form method="POST" class="col-12 col-lg-6 bg-white d-flex flex-column p-3 rounded-bottom-3">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Adresse email</label>
+                        <input type="email" class="form-control" name="email" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Mot de passe</label>
+                        <input type="password" class="form-control" name="pwd" id="password">
+                    </div>
+                    <div class="text-center">
+                        <button id="btn-submit" type="submit" class="btn align-self-center text-white me-4">Se connecter</button>
+                        <button class="btn btn-color">
+                            <a href="../signup/signup.html" class="text-decoration-none text-black">S'incrire</a>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
