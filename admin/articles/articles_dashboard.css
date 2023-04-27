@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+font-family: "valorant";
+src: url(../../ressources/Valorant\ Font.ttf);
+}
+@font-face {
+    font-family: "poppins-reg";
+    src: url(../../ressources/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppins-extrabold";
+    src: url(../../ressources/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "poppins-bold";
+    src: url(../../ressources/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "pixelart";
+    src: url(../../ressources/pixelart.ttf);
+}
+
+.valorant-font{
+font-family: "valorant";
+font-size: 1.25em;
+}
+
+.poppins-reg{
+    font-family: "poppins-reg";
+}
+
+.poppins-extrabold{
+    font-family: "poppins-extrabold";
+}
+
+.color-violet{
+    background-color: #968ADF;
+}
+
+.color-blue{
+    background-color: #5FA0FE;
+}
+.color-gray{
+    background-color: #F6F6F6;
+}
+
+main{
+    margin-top: 60px;
+}
+
+p {
+    font-family: "poppins-reg";
+    text-align: justify;
+}
+
+h2 {
+    font-family: "poppins-extrabold";
+}
+
+h3 {
+    font-family: "poppins-extrabold";
+}
+
+h5{
+    font-family: "poppins-bold";
+}
+
+#btn-connect{
+    background-color: #968ADF;
+}
+
+#search_submit{
+    background-color: #968ADF;
+}
+
+#admin_user_button{
+    background-color: #968ADF;
+}
+
+#admin_articles_button{
+    background-color: #968ADF;
+}
+
+main{
+    margin-top: 60px;
+    
+}
+
+.add_articles_color{
+    background-color: #968ADF !important; 
+}
+
+.button_color{
+    background-color: #968ADF !important; 
+}
+
+.chat-size-interface{
+    height: 95svh;
+}
+
+.icons-sizing{
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.add-discussion-icon-size{
+    max-width: 60%;
+    max-height: 60%;
+}
+
+.avatar-size{
+    max-width: 75%;
+    max-height: 75%;
+}
+
+.text-area-size{
+    resize: none;
+}
+
+.chat-message-size{
+    height: 100svh;
+}
+
+ .message-icons{
+    bottom: 17%;
+    /* right: 0; */
+ }
