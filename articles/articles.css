@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+font-family: "valorant";
+src: url(../ressources/Valorant\ Font.ttf);
+}
+@font-face {
+    font-family: "poppins-reg";
+    src: url(../ressources/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poppins-extrabold";
+    src: url(../ressources/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "poppins-bold";
+    src: url(../ressources/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "pixelart";
+    src: url(../ressources/pixelart.ttf);
+}
+
+.valorant-font{
+font-family: "valorant";
+font-size: 1.25em;
+}
+
+.poppins-reg{
+    font-family: "poppins-reg";
+}
+
+.poppins-extrabold{
+    font-family: "poppins-extrabold";
+}
+
+.color-violet{
+    background-color: #968ADF;
+}
+
+.color-blue{
+    background-color: #5FA0FE;
+}
+
+p {
+    font-family: "poppins-reg";
+    text-align: justify;
+}
+
+h2 {
+    font-family: "poppins-extrabold";
+}
+
+h3 {
+    font-family: "poppins-extrabold";
+}
+
+h5{
+    font-family: "poppins-bold";
+}
+
+@media screen and (min-width: 992px) {
+    #blue-box {
+        background-color: #5FA0FE;
+    }
+  }
+
+#container-intro{
+min-height: 27.125em;
+background-color: #968ADF;
+
+}
+
+#blue-box{
+    min-height: 200px;
+}
+
+#white-box{
+    min-height: 320px;
+}
+
+#text{
+    background-color: #968ADF;
+}
+
+#btn-connect{
+    background-color: #968ADF;
+}
+
+.carousel-box-color{
+    background-color: #000000bf;
+}
+
+.carousel-picture-size{
+    max-height: 70vh;
+}
+
+.articles-color{
+    background-color: #968ADF;
+}
+
+.card{
+    position: relative;
+    box-shadow: 2px 5px 5px rgba(0,0,0,0.7);
+  }
+.rounded-square1{
+    position: absolute;
+    background: #5FA0FE;
+    width: 100%;
+    height: 100%;
+    bottom: 18%;
+    border-radius: 5% 10% 10% 10%;
+    clip-path: polygon(0 0,4% 0,100% 30%,100% 100%,0 100%);
+    z-index:1;
+  }
+  
+.rounded-square2{
+    position:absolute;
+    background: #968ADF;
+    width: 100%;
+    height: 100%;
+    bottom: 18%;
+    border-radius: 1% 5% 10% 10%;
+    clip-path: polygon(0 30%,96% 0,100% 0,100% 100%,0 100%);
+    z-index:2;
+  }
