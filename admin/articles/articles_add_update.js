@@ -9,7 +9,6 @@ function insertArticle(name, text_content, picture,article_display) {
     fd.append('text_content', text_content);
     fd.append('media_content', picture);
     fd.append('articles_display', article_display);
-
     $.ajax({
         url: "../../php/admin/articles.php", 
         type: "POST", 
@@ -99,7 +98,7 @@ else if(insert){
         const name = $("#articles_name").val(); 
         const text_content = tinymce.activeEditor.getContent({format: 'text'}); 
         const picture = $('#picture')[0].files[0];
-        const article_display = tinymce.activeEditor.getContent(); 
+        const article_display = tinymce.activeEditor.getContent();
         insertArticle(name, text_content, picture,article_display);
     });
 
