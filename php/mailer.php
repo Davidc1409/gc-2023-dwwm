@@ -13,7 +13,7 @@ function mailer($to,$subject,$body){
     $mail->Host = "smtp-mail.outlook.com";
     $mail->Port = 587;
     $mail->Username = "david.chau@imie-paris.fr";
-    $mail->Password = "Dqvid8725";
+    $mail->Password = "";
     $mail->SetFrom("david.chau@imie-paris.fr","David Chau");
     $mail->Subject = $subject;
     $mail->Body = $body;
